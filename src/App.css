@@ -9,10 +9,10 @@ a {
   text-decoration: none;
 }
 
-.root {
+.game {
 background-color: #DADED4;
 margin: 0rem .5rem;
-height: 85vh;
+height: 75vh;
 padding: 1rem;
 }
 
@@ -23,10 +23,10 @@ font-family: 'Lora', serif;
 font-size: 2rem;
 font-weight: 700;
 margin: 1rem .5rem 0rem .5rem;
-padding: .15rem;
+padding: .1rem;
 }
 
-nav p {
+.nav p {
 padding-left: 1.25rem;
 }
 
@@ -36,6 +36,6 @@ color: #fff;
 font-size: .9rem;
 font-family: 'Roboto', sans-serif;
 margin: 0rem .5rem 1rem .5rem;
-padding: .5rem;
+padding: .25rem;
 text-align: center;
 }
