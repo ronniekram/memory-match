@@ -1,15 +1,8 @@
 import React from "react";
 import Card from "./cards/card";
 
-function Game(cards) {
-  console.log(cards)
-
-  return (
-    <div className="game">
-      <Card cards={cards} />
-    </div>
-  )
-
+class Game extends React.Component {
+  
 }
 
 export default Game;

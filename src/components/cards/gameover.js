@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-function GameOver() {
+class GameOver extends React.Component() {
 
 }
 

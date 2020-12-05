@@ -1,11 +1,12 @@
 import React from "react";
 
-function Header(){
-
-  return ( 
-  <div className="nav">
-  <p> Memory Match Game </p>
-  </div>)
+class Header extends React.Component {
+  render() {
+    return ( 
+      <div className="nav">
+      <p> Memory Match Game </p>
+      </div>)
+  }
 }
 
 export default Header;
