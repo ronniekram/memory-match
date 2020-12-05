@@ -5,9 +5,13 @@ function Card(cards) {
     return Math.floor(Math.random() * 36) + 1;
   }
 
+  let logCards = console.log(cards)
+
   return (<div>
-    {randomNumber()}
+    {logCards}
   </div>)
+
+
 }
 
 export default Card;

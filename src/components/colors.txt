@@ -1,0 +1,11 @@
+#A3BCB6 - bluegreen
+#39603D - deep green
+#3C403D - dark grey
+#DADED4 - light greengrey
+#fffbf1 - off white
+
+
+
+card back - dark grey 
+card front - bluegreen 
+card image - off white
