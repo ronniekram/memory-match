@@ -3,7 +3,7 @@ import React from "react";
 function Header(){
 
   return ( 
-  <div class="nav">
+  <div className="nav">
   <p> Memory Match Game </p>
   </div>)
 }

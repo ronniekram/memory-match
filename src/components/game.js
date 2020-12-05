@@ -3,12 +3,13 @@ import Easy from "./cards/easy";
 import Normal from "./cards/easy";
 import Hard from "./cards/easy";
 import XtraHard from "./cards/easy";
+import Card from "./cards/card";
 
 function Game() {
 
   return (
-    <div class="game">
-
+    <div className="game">
+      <Card />
     </div>
   )
 
