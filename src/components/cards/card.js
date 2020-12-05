@@ -5,16 +5,17 @@ function Card({cards}) {
     return Math.floor(Math.random() * 36) + 1;
   }
 
-  let randomCard = () => {
-    cards && cards.find(card => {
-      if (card.id === randomNumber()) {
-        console.log(card)
-      }
-    })
-  }
+  // console log cards on fetch to check how to access
+  // let randomCard = () => {
+  //   cards && cards.filter(card => {
+  //     if (card.id === randomNumber()) {
+  //       console.log(card)
+  //     }
+  //   })
+  // }
 
   return (<div>
-    {randomCard()}
+    {randomNumber()}
   </div>)
 }
 

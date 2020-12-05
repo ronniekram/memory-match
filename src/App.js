@@ -10,11 +10,12 @@ class App extends React.Component {
   fetchCards = () => {
     return fetch("https://raw.githubusercontent.com/ronniekram/memory-match/main/cards.json")
     .then(resp => resp.json())
-    .then(data => {
-      this.setState({
-        cards: data.cards
-      })
-    })
+    // .then(data => {
+    //   this.setState({
+    //     cards: data.cards
+    //   })
+    // })
+    .then(data => console.log(data.cards))
   }
   componentDidMount() {
     this.fetchCards()
