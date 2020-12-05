@@ -1,8 +1,8 @@
 import React from "react";
-import Card from "./cards/card";
+import Card from "./card";
 
 class Game extends React.Component {
-  
+
 }
 
 export default Game;
