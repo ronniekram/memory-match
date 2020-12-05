@@ -16,6 +16,22 @@ height: 75vh;
 padding: 1rem;
 }
 
+.image-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: transparent;
+  padding: 10px
+}
+
+.card-back {
+  background-color: #3C403D;
+  border: 1px solid #39603D;
+  border-radius: 15px;
+  height: 10rem;
+  width: 10rem;
+
+}
+
 .nav {
 background-color: #A3BCB6;
 color: #fff;
