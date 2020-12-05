@@ -4,7 +4,7 @@ import CardBack from './cardback'
 
 class Game extends React.Component {
   render() {
-    return (<CardBack />)
+    return (<Card />)
   }
 
 }

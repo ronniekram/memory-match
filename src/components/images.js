@@ -182,3 +182,5 @@ export let images = [
     flipped: false
   }
 ]
+
+export default images;
