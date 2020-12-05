@@ -6,21 +6,25 @@ import DropDown from "./components/nav/dropdown";
 import Game from "./components/game"
 
 class App extends React.Component {
-  componentDidMount() {
+
+  fetchCards = () => {
     fetch("https://raw.githubusercontent.com/ronniekram/memory-match/main/cards.json")
     .then(resp => resp.json())
     .then(data => {
       this.setState({
-        cards: data.cards 
+        cards: data.cards
       })
     })
+  }
+  componentDidMount() {
+    this.fetchCards()
   }
 
   render() {
     return (
       <div className="App">
         <Header />
-        <Game />
+        <Game cards={this.fetchCards}/>
         <Footer />
       </div>
     );
