@@ -8,7 +8,7 @@ import Game from "./components/game"
 class App extends React.Component {
 
   fetchCards = () => {
-    fetch("https://raw.githubusercontent.com/ronniekram/memory-match/main/cards.json")
+    return fetch("https://raw.githubusercontent.com/ronniekram/memory-match/main/cards.json")
     .then(resp => resp.json())
     .then(data => {
       this.setState({
@@ -24,7 +24,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <Header />
-        <Game cards={this.fetchCards}/>
+        <Game cards={this.cards}/>
         <Footer />
       </div>
     );

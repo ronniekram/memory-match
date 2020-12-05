@@ -9,7 +9,7 @@ function Game({cards}) {
 
   return (
     <div className="game">
-      <Card />
+      <Card cards={cards} />
     </div>
   )
 

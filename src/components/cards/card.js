@@ -6,7 +6,7 @@ function Card({cards}) {
   }
 
   let randomCard = () => {
-    cards && cards.forEach(card => {
+    cards && cards.find(card => {
       if (card.id === randomNumber()) {
         console.log(card)
       }
@@ -14,7 +14,7 @@ function Card({cards}) {
   }
 
   return (<div>
-    <p> {randomCard()}</p>
+    {randomCard()}
   </div>)
 }
 
