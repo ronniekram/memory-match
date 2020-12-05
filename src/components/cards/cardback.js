@@ -1,7 +1,7 @@
-import React from "react";
+// import React from "react";
 
-function CardBack() {
+// function CardBack() {
 
-}
+// }
 
-export default CardBack;
+// export default CardBack;

@@ -1,8 +1,8 @@
-import React from "react";
-import Card from "./card"
+// import React from "react";
+// import Card from "./card"
 
-function XtraHard() {
+// function XtraHard() {
 
-}
+// }
 
-export default XtraHard;
+// export default XtraHard;

@@ -1,8 +1,8 @@
-import React from "react";
-import Card from "./card"
+// import React from "react";
+// import Card from "./card"
 
-function Hard() {
+// function Hard() {
 
-}
+// }
 
-export default Hard;
+// export default Hard;

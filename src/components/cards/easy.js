@@ -1,8 +1,8 @@
-import React from "react";
-import Card from "./card"
+// import React from "react";
+// import Card from "./card"
 
-function Easy() {
+// function Easy() {
 
-}
+// }
 
-export default Easy;
+// export default Easy;
