@@ -8,17 +8,17 @@ class Card extends React.Component {
   render(){
     let imageArray = _.sampleSize(images, 8);
 
-    function randomCards(imageArray) {
+    function randomCards() {
       console.log(imageArray)
-      imageArray.forEach(card => {
-        return (<div>
-          {console.log(card.img_url)}
+      imageArray && imageArray.forEach(card => {
+        return (<div className="card-front">
+          <p> {card.img_url}</p>
         </div>)
       })
     }
     return (
       <div className="image-container">
-        {randomCards(imageArray)}
+        {randomCards()}
       </div>
     )
   }
