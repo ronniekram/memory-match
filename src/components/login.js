@@ -14,6 +14,8 @@ class Login extends React.Component {
 
   render() {
     return null
+    // will contain form with input for a name - handleChange
+    // form will need submit button to set a users name - handleClick
   }
 
 }
