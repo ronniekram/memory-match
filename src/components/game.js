@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "./card";
-import CardBack from './cardback'
+import _ from 'lodash';
+import images from './images';
 
 class Game extends React.Component {
   render() {
