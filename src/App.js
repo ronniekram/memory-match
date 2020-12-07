@@ -1,19 +1,46 @@
 import './App.css';
 import React from "react";
+import Login from "./components/login";
+import Game from "./components/game";
+import GameOver from "./components/gameover"
 import Header from "./components/nav/header";
 import Footer from "./components/nav/footer";
-import Game from "./components/game"
 
 class App extends React.Component {
-render() {
-  return (
-    <div className="root">
-      <Header />
-      <Game />
-      <Footer />
-    </div>
-  )
-}
+  state = {
+    showLogin: true,
+    showEndGame: false,
+    name: "",
+    score: 0
+  };
+
+  handleLogin = (name, boolean) => {
+    this.setState({name: name, showLogin: boolean})
+  };
+
+  handleEndGame = (boolean) => {
+    if (boolean) {
+      this.setState({showEndGame: boolean, score: this.state.score + 1});
+    } else {
+      this.setState({showEndGame: boolean});
+    }
+  };
+
+
+
+  render() {
+    const {showLogin, name, score, showEndGame} = this.state;
+
+    return (
+      <div>
+        {showLogin ? <Login name={this.handleLogin}/> : null}
+        {showEndGame ? <GameOver newGame={this.handleEndGame} /> : null}
+        <Header name={name} score={score} />
+        <Game endGame={this.handleEndGame} />
+        <Footer />
+      </div>
+    )
+  }
 }
 
 export default App;
