@@ -5,9 +5,16 @@ import images from './images';
 
 class Game extends React.Component {
   render() {
+    let cards = _.sampleSize(images, 8)
     return (
       <div className="game">
-        <Card />
+        {images.map(img => {
+          return(
+            <div className="card-img" key={img.id} style={ { background: `url(${img.img_url})`} } onClick={this.handleClick}> 
+
+            </div>
+          )
+        })}
       </div>
     )
   }
