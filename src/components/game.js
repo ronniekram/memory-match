@@ -20,6 +20,18 @@ class Game extends React.Component {
       this.choices = [];
     }
 
+    if (this.choices.length > 2) {
+      if (!this.checkName(this.choices[0], this.choices[1])) {
+        this.switch(this.choices[0]);
+        this.switch(this.choices[1]);
+        this.choices.shift();
+        this.choices.shift();
+      } else {
+        this.choices.shift();
+        this.choices.shift();
+      }
+    }
+
 
   }
 
