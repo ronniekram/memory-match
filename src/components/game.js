@@ -42,8 +42,16 @@ class Game extends React.Component {
         this.choices = [];
       }
     }
+  }
 
-
+  checkName = (pick1, pick2) => {
+    if (pick1.getAttribute("name") === pick2.getAttribute("name")) {
+      pick1.setAttribute("check", "found");
+      pick2.setAttribute("check", "found");
+      return true;
+    } else {
+      return false;
+    }
   }
 
 
