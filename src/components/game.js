@@ -32,6 +32,17 @@ class Game extends React.Component {
       }
     }
 
+    let allImages = document.getElementsByClassName("img-blank");
+    if (allImages.length < 1) {
+      this.props.endGame(true);
+      let reset = document.getElementsByClassName("image");
+      for (let i = 0; i < reset.length; i++) {
+        reset[i].classList.add("img-blank");
+        reset[i].setAttribute("check", "false");
+        this.choices = [];
+      }
+    }
+
 
   }
 
