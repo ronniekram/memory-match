@@ -10,7 +10,17 @@ class Game extends React.Component {
     let pick = event.target;
     if (pick.getAttribute("check") === "found") {
       return;
+    };
+
+    if (pick !== this.choices[0]) {
+      this.switch(pick);
+      this.choices.push(pick);
+    } else {
+      this.switch(pick);
+      this.choices = [];
     }
+
+
   }
 
 
