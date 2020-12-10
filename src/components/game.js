@@ -54,6 +54,16 @@ class Game extends React.Component {
     }
   }
 
+  switch = target => {
+    if (target.getAttribute("check") === "true") {
+      target.setAttribute("check", "false");
+      target.classList.add("img-blank");
+    } else {
+      target.setAttribute("check", "true");
+      target.classList.remove("img-blank");
+    }
+  }
+
 
 
 
