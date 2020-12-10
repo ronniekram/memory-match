@@ -23,15 +23,7 @@ padding: 1rem;
   padding: 10px
 }
 
-.card-back {
-  background-color: #3C403D;
-  border: 1px solid #39603D;
-  border-radius: 15px;
-  height: 10rem;
-  width: 10rem;
-}
-
-.card-front {
+.img-blank {
   background-color: #A3BCB6;
   border: 1px solid #39603D;
   border-radius: 15px;

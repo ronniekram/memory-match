@@ -52,7 +52,7 @@ class Game extends React.Component {
     } else {
       return false;
     }
-  }
+  };
 
   switch = target => {
     if (target.getAttribute("check") === "true") {
@@ -62,7 +62,7 @@ class Game extends React.Component {
       target.setAttribute("check", "true");
       target.classList.remove("img-blank");
     }
-  }
+  };
 
 
 
@@ -73,7 +73,7 @@ class Game extends React.Component {
       <div className="game">
         {cards.map(card => {
           return(
-            <div className="card-blank" key={card.id} style={ { background: `url(${card.img_url})`} } onClick={this.handleClick}> 
+            <div className="img-blank" key={card.id} style={ { background: `url(${card.img_url})`} } onClick={this.handleClick}> 
 
             </div>
           )
