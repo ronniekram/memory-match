@@ -7,7 +7,20 @@ class GameOver extends React.Component() {
     this.props.newGame(false);
   };
 
-  
+  render () {
+    messages.sort(() => Math.random() - 0.5);
+
+    return (
+      <div className="game-over">
+        <div className="message">
+          <h2></h2>
+          <p></p>
+          <button></button>
+        </div>
+      </div>
+    )
+  }
+
 }
 
 export default GameOver;
