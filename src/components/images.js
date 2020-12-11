@@ -111,8 +111,8 @@ export let images = [
   },
   {
     id: 19,
-    name: "hareball",
-    img_url: "https://raw.githubusercontent.com/ronniekram/memory-match/main/src/images/hareball.png",
+    name: "harebell",
+    img_url: "https://raw.githubusercontent.com/ronniekram/memory-match/main/src/images/harebell.png",
     flipped: false
   },
   {

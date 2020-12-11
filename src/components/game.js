@@ -44,9 +44,9 @@ class Game extends React.Component {
   }
 
   checkName = (pick1, pick2) => {
-    if (pick1.getAttribute("key") === pick2.getAttribute("key")) {
-      pick1.setAttribute("flipped", "found");
-      pick2.setAttribute("flipped", "found");
+    if (pick1.getAttribute("name") === pick2.getAttribute("name")) {
+      pick1.setAttribute("flipped", "true");
+      pick2.setAttribute("flipped", "true");
       return true;
     } else {
       return false;
@@ -77,7 +77,8 @@ class Game extends React.Component {
           return(
             <div 
             className="img img-blank" 
-            key={card.id} 
+            // key={card.id} 
+            name={card.name}
             style={ { background: `url(${card.img_url})`} } 
             flipped="false" 
             onClick={this.handleClick}> 
