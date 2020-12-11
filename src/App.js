@@ -23,12 +23,12 @@ class App extends React.Component {
 
 
   render() {
-    const {name, score, showEndGame} = this.state;
+    const {score, showEndGame} = this.state;
 
     return (
       <div>
         {showEndGame ? <GameOver newGame={this.handleEndGame} /> : null}
-        <Header name={name} score={score} />
+        <Header score={score} />
         <Game endGame={this.handleEndGame} />
         <Footer />
       </div>

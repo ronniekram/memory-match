@@ -10,7 +10,6 @@ class Header extends React.Component {
         </div>
 
         <div className="nav-right">
-          <div className="user-name"> {name} </div>
           <div className="user-score"> <p
           className="right"> Score: {score} </p> </div>
         </div>
