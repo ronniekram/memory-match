@@ -9,211 +9,211 @@ export let images = [
   },
   {
     id: 2,
-    name: "aloe",
+    name: "anthurium",
     img_url: "https://raw.githubusercontent.com/ronniekram/memory-match/main/src/images/anthurium.png",
     flipped: false
   },
   {
     id: 3,
-    name: "aloe",
+    name: "bamboo",
     img_url: "https://raw.githubusercontent.com/ronniekram/memory-match/main/src/images/bamboo.png",
     flipped: false
   },
   {
     id: 4,
-    name: "aloe",
+    name: "bonsai",
     img_url: "https://raw.githubusercontent.com/ronniekram/memory-match/main/src/images/bonsai.png",
     flipped: false
   },
   {
     id: 5,
-    name: "aloe",
+    name: "bouquet",
     img_url: "https://raw.githubusercontent.com/ronniekram/memory-match/main/src/images/bouquet-of-daisys.png",
     flipped: false
   },
   {
     id: 6,
-    name: "aloe",
+    name: "bush",
     img_url: "https://raw.githubusercontent.com/ronniekram/memory-match/main/src/images/bush.png",
     flipped: false
   },
   {
     id: 7,
-    name: "aloe",
+    name: "cactus-1",
     img_url: "https://raw.githubusercontent.com/ronniekram/memory-match/main/src/images/cactus-1.png",
     flipped: false
   },
   {
     id: 8,
-    name: "aloe",
+    name: "cactus-2",
     img_url: "https://raw.githubusercontent.com/ronniekram/memory-match/main/src/images/cactus-2.png",
     flipped: false
   },
   {
     id: 9,
-    name: "aloe",
+    name: "calla",
     img_url: "https://raw.githubusercontent.com/ronniekram/memory-match/main/src/images/calla.png",
     flipped: false
   },
   {
     id: 10,
-    name: "aloe",
+    name: "camomile",
     img_url: "https://raw.githubusercontent.com/ronniekram/memory-match/main/src/images/camomile.png",
     flipped: false
   },
   {
     id: 11,
-    name: "aloe",
+    name: "dandelion",
     img_url: "https://raw.githubusercontent.com/ronniekram/memory-match/main/src/images/dandelion.png",
     flipped: false
   },
   {
     id: 12,
-    name: "aloe",
+    name: "dry-tree",
     img_url: "https://raw.githubusercontent.com/ronniekram/memory-match/main/src/images/dry-tree.png",
     flipped: false
   },
   {
     id: 13,
-    name: "aloe",
+    name: "fennel",
     img_url: "https://raw.githubusercontent.com/ronniekram/memory-match/main/src/images/fennel.png",
     flipped: false
   },
   {
     id: 14,
-    name: "aloe",
+    name: "flower-3",
     img_url: "https://raw.githubusercontent.com/ronniekram/memory-match/main/src/images/flower-3.png",
     flipped: false
   },
   {
     id: 15,
-    name: "aloe",
+    name: "flower-4",
     img_url: "https://raw.githubusercontent.com/ronniekram/memory-match/main/src/images/flower-4.png",
     flipped: false
   },
   {
     id: 16,
-    name: "aloe",
+    name: "flower-6",
     img_url: "https://raw.githubusercontent.com/ronniekram/memory-match/main/src/images/flower-6.png",
     flipped: false
   },
   {
     id: 17,
-    name: "aloe",
+    name: "flower",
     img_url: "https://raw.githubusercontent.com/ronniekram/memory-match/main/src/images/flower.png",
     flipped: false
   },
   {
     id: 18,
-    name: "aloe",
+    name: "gerbera",
     img_url: "https://raw.githubusercontent.com/ronniekram/memory-match/main/src/images/gerbera.png",
     flipped: false
   },
   {
     id: 19,
-    name: "aloe",
+    name: "hareball",
     img_url: "https://raw.githubusercontent.com/ronniekram/memory-match/main/src/images/hareball.png",
     flipped: false
   },
   {
     id: 20,
-    name: "aloe",
+    name: "leaves",
     img_url: "https://raw.githubusercontent.com/ronniekram/memory-match/main/src/images/leaves.png",
     flipped: false
   },
   {
     id: 21,
-    name: "aloe",
+    name: "lily",
     img_url: "https://raw.githubusercontent.com/ronniekram/memory-match/main/src/images/lily.png",
     flipped: false
   },
   {
     id: 22,
-    name: "aloe",
+    name: "lotus",
     img_url: "https://raw.githubusercontent.com/ronniekram/memory-match/main/src/images/lotus.png",
     flipped: false
   },
   {
     id: 23,
-    name: "aloe",
+    name: "oak",
     img_url: "https://raw.githubusercontent.com/ronniekram/memory-match/main/src/images/oak.png",
     flipped: false
   },
   {
     id: 24,
-    name: "aloe",
+    name: "palm",
     img_url: "https://raw.githubusercontent.com/ronniekram/memory-match/main/src/images/palm-tree.png",
     flipped: false
   },
   {
     id: 25,
-    name: "aloe",
+    name: "peony",
     img_url: "https://raw.githubusercontent.com/ronniekram/memory-match/main/src/images/peony.png",
     flipped: false
   },
   {
     id: 26,
-    name: "aloe",
+    name: "plant",
     img_url: "https://raw.githubusercontent.com/ronniekram/memory-match/main/src/images/plant.png",
     flipped: false
   },
   {
     id: 27,
-    name: "aloe",
+    name: "poppy",
     img_url: "https://raw.githubusercontent.com/ronniekram/memory-match/main/src/images/poppy.png",
     flipped: false
   },
   {
     id: 28,
-    name: "aloe",
+    name: "reed",
     img_url: "https://raw.githubusercontent.com/ronniekram/memory-match/main/src/images/reed.png",
     flipped: false
   },
   {
     id: 29,
-    name: "aloe",
+    name: "rose-1",
     img_url: "https://raw.githubusercontent.com/ronniekram/memory-match/main/src/images/rose-1.png",
     flipped: false
   },
   {
     id: 30,
-    name: "aloe",
+    name: "sprout-1",
     img_url: "https://raw.githubusercontent.com/ronniekram/memory-match/main/src/images/sprout-1.png",
     flipped: false
   },
   {
     id: 31,
-    name: "aloe",
+    name: "sprout",
     img_url: "https://raw.githubusercontent.com/ronniekram/memory-match/main/src/images/sprout.png",
     flipped: false
   },
   {
     id: 32,
-    name: "aloe",
+    name: "sprouting-bean",
     img_url: "https://raw.githubusercontent.com/ronniekram/memory-match/main/src/images/sprouting-bean.png",
     flipped: false
   },
   {
     id: 33,
-    name: "aloe",
+    name: "sunflower-1",
     img_url: "https://raw.githubusercontent.com/ronniekram/memory-match/main/src/images/sunflower-1.png",
     flipped: false
   },
   {
     id: 34,
-    name: "aloe",
+    name: "tree",
     img_url: "https://raw.githubusercontent.com/ronniekram/memory-match/main/src/images/tree.png",
     flipped: false
   },
   {
     id: 35,
-    name: "aloe",
+    name: "tulip",
     img_url: "https://raw.githubusercontent.com/ronniekram/memory-match/main/src/images/tulip.png",
     flipped: false
   },
   {
     id: 36,
-    name: "aloe",
+    name: "wheat",
     img_url: "https://raw.githubusercontent.com/ronniekram/memory-match/main/src/images/wheat.png",
     flipped: false
   }
