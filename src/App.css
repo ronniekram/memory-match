@@ -36,7 +36,7 @@ padding: 1rem;
   background-size: contain !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
-  margin: .25rem;
+  padding: .5rem;
 }
 
 .img-blank {

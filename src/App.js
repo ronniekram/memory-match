@@ -7,7 +7,6 @@ import Footer from "./components/nav/footer";
 
 class App extends React.Component {
   state = {
-    showLogin: true,
     showEndGame: false,
     name: "",
     score: 0
@@ -24,7 +23,7 @@ class App extends React.Component {
 
 
   render() {
-    const {showLogin, name, score, showEndGame} = this.state;
+    const {name, score, showEndGame} = this.state;
 
     return (
       <div>

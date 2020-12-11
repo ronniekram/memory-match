@@ -68,6 +68,8 @@ class Game extends React.Component {
 
   render() {
     let cards = _.sampleSize(images, 8)
+    let cards2 = cards
+    cards = cards.concat(cards2).sort(() => Math.random() - 0.5)
     return (
       <div className="game">
         <div className="inner-game">
