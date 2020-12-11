@@ -70,6 +70,7 @@ class Game extends React.Component {
     let cards = _.sampleSize(images, 8)
     return (
       <div className="game">
+        <div className="inner-game">
         {cards.map(card => {
           return(
             <div className="img-blank" key={card.id} style={ { background: `url(${card.img_url})`} } onClick={this.handleClick}> 
@@ -77,6 +78,7 @@ class Game extends React.Component {
             </div>
           )
         })}
+        </div>
       </div>
     )
   }

@@ -16,6 +16,15 @@ height: 75vh;
 padding: 1rem;
 }
 
+.inner-game {
+  background-color: transparent;
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .image-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -25,10 +34,13 @@ padding: 1rem;
 
 .img-blank {
   background-color: #A3BCB6;
+  background-size: contain;
   border: 1px solid #39603D;
   border-radius: 15px;
-  height: 10rem;
-  width: 10rem;
+  height: 8rem;
+  width: 8rem;
+  padding: .5rem;
+  margin: .5rem;
 }
 
 .card-front img {
@@ -40,6 +52,8 @@ padding: 1rem;
 
 .nav {
 background-color: #A3BCB6;
+display: flex;
+justify-content: space-between;
 color: #fff;
 font-family: 'Lora', serif;
 font-size: 2rem;
@@ -48,8 +62,12 @@ margin: 1rem .5rem 0rem .5rem;
 padding: .1rem;
 }
 
-.nav p {
+.left {
 padding-left: 1.25rem;
+}
+
+.right {
+  padding-right: 1.25rem;
 }
 
 .footer {

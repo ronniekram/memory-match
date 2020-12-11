@@ -6,12 +6,13 @@ class Header extends React.Component {
     return ( 
       <div className="nav">
         <div className="nav-left">
-          <p> Memory Match Game </p>
+          <p className="left"> Memory Match Game </p>
         </div>
 
         <div className="nav-right">
           <div className="user-name"> {name} </div>
-          <div className="user-score"> {score} </div>
+          <div className="user-score"> <p
+          className="right"> Score: {score} </p> </div>
         </div>
       </div>)
   }

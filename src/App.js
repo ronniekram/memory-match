@@ -1,6 +1,5 @@
 import './App.css';
 import React from "react";
-import Login from "./components/login";
 import Game from "./components/game";
 import GameOver from "./components/gameover"
 import Header from "./components/nav/header";
@@ -12,10 +11,6 @@ class App extends React.Component {
     showEndGame: false,
     name: "",
     score: 0
-  };
-
-  handleLogin = (name, boolean) => {
-    this.setState({name: name, showLogin: boolean})
   };
 
   handleEndGame = (boolean) => {
@@ -33,7 +28,6 @@ class App extends React.Component {
 
     return (
       <div>
-        {showLogin ? <Login name={this.handleLogin}/> : null}
         {showEndGame ? <GameOver newGame={this.handleEndGame} /> : null}
         <Header name={name} score={score} />
         <Game endGame={this.handleEndGame} />
