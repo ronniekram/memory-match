@@ -73,7 +73,13 @@ class Game extends React.Component {
         <div className="inner-game">
         {cards.map(card => {
           return(
-            <div className="img-blank" key={card.id} style={ { background: `url(${card.img_url})`} } onClick={this.handleClick}> 
+            <div 
+            className="img img-blank" 
+            name={card.name}
+            key={card.id} 
+            style={ { background: `url(${card.img_url})`} } 
+            check="false" 
+            onClick={this.handleClick}> 
 
             </div>
           )

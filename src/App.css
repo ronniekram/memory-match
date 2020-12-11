@@ -32,6 +32,13 @@ padding: 1rem;
   padding: 10px
 }
 
+.img {
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  margin: .25rem;
+}
+
 .img-blank {
   background-color: #A3BCB6;
   background-size: contain;
@@ -41,13 +48,6 @@ padding: 1rem;
   width: 8rem;
   padding: .5rem;
   margin: .5rem;
-}
-
-.card-front img {
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
-  padding: .5rem;
 }
 
 .nav {
