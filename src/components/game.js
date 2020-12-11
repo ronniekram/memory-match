@@ -77,7 +77,6 @@ class Game extends React.Component {
           return(
             <div 
             className="img img-blank" 
-            // key={card.id} 
             name={card.name}
             style={ { background: `url(${card.img_url})`} } 
             flipped="false" 

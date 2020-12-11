@@ -40,8 +40,8 @@ padding: 1rem;
 }
 
 .img-blank {
-  background-color: #A3BCB6;
-  background-size: contain;
+  background: #A3BCB6;
+  /* background-size: contain; */
   border: 1px solid #39603D;
   border-radius: 15px;
   height: 8rem;
