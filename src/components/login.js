@@ -22,6 +22,10 @@ class Login extends React.Component {
             type="name"
             className="form" 
             onChange={this.handleChange} />
+
+            <button onClick={this.handleClick} className="button" >
+              Play!
+            </button>
           </div>
         </form>
       </div>
