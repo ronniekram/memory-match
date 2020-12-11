@@ -1,5 +1,4 @@
 import React from "react";
-import Card from "./card";
 import _ from 'lodash';
 import images from './images';
 

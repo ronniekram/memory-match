@@ -13,23 +13,25 @@ class Login extends React.Component {
   };
 
   render() {
-    <div>
+    return (
       <div>
-        <form>
-          <div>
-            <label>Name:</label>
-            <input 
-            type="name"
-            className="form" 
-            onChange={this.handleChange} />
+        <div>
+          <form>
+            <div>
+              <label>Name:</label>
+              <input 
+              type="name"
+              className="form" 
+              onChange={this.handleChange} />
 
-            <button onClick={this.handleClick} className="button" >
-              Play!
-            </button>
-          </div>
-        </form>
+              <button onClick={this.handleClick} className="button" >
+                Play!
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
-    </div>
+)
   }
 
 }

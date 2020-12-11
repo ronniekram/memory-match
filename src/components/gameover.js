@@ -2,7 +2,7 @@ import React from 'react';
 import { messages } from "./messages";
 
 
-class GameOver extends React.Component() {
+class GameOver extends React.Component {
   handleClick = () => {
     this.props.newGame(false);
   };
@@ -18,7 +18,7 @@ class GameOver extends React.Component() {
           <button onClick={this.handleClick}>Play Again</button>
         </div>
       </div>
-    )
+    );
   }
 
 }
