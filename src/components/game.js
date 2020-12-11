@@ -34,7 +34,7 @@ class Game extends React.Component {
     let allImages = document.getElementsByClassName("img-blank");
     if (allImages.length < 1) {
       this.props.endGame(true);
-      let reset = document.getElementsByClassName("image");
+      let reset = document.getElementsByClassName("img");
       for (let i = 0; i < reset.length; i++) {
         reset[i].classList.add("img-blank");
         reset[i].setAttribute("flipped", "false");
@@ -45,8 +45,8 @@ class Game extends React.Component {
 
   checkName = (pick1, pick2) => {
     if (pick1.getAttribute("name") === pick2.getAttribute("name")) {
-      pick1.setAttribute("flipped", "true");
-      pick2.setAttribute("flipped", "true");
+      pick1.setAttribute("flipped", "found");
+      pick2.setAttribute("flipped", "found");
       return true;
     } else {
       return false;
@@ -56,10 +56,10 @@ class Game extends React.Component {
   switch = target => {
     if (target.getAttribute("flipped") === "true") {
       target.setAttribute("flipped", "false");
-      target.classList.add("img-blank");
+      target.classList.add("img");
     } else {
       target.setAttribute("flipped", "true");
-      target.classList.remove("img-blank");
+      target.classList.remove("img");
     }
   };
 
@@ -76,7 +76,7 @@ class Game extends React.Component {
         {cards.map(card => {
           return(
             <div 
-            className="img img-blank" 
+            className="img-blank" 
             name={card.name}
             style={ { background: `url(${card.img_url})`} } 
             flipped="false" 
