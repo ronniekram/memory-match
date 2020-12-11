@@ -7,7 +7,7 @@ class Game extends React.Component {
 
   handleClick = event => {
     let pick = event.target;
-    if (pick.getAttribute("check") === "found") {
+    if (pick.getAttribute("flipped") === "found") {
       return;
     };
 
@@ -37,16 +37,16 @@ class Game extends React.Component {
       let reset = document.getElementsByClassName("image");
       for (let i = 0; i < reset.length; i++) {
         reset[i].classList.add("img-blank");
-        reset[i].setAttribute("check", "false");
+        reset[i].setAttribute("flipped", "false");
         this.choices = [];
       }
     }
   }
 
   checkName = (pick1, pick2) => {
-    if (pick1.getAttribute("name") === pick2.getAttribute("name")) {
-      pick1.setAttribute("check", "found");
-      pick2.setAttribute("check", "found");
+    if (pick1.getAttribute("key") === pick2.getAttribute("key")) {
+      pick1.setAttribute("flipped", "found");
+      pick2.setAttribute("flipped", "found");
       return true;
     } else {
       return false;
@@ -54,11 +54,11 @@ class Game extends React.Component {
   };
 
   switch = target => {
-    if (target.getAttribute("check") === "true") {
-      target.setAttribute("check", "false");
+    if (target.getAttribute("flipped") === "true") {
+      target.setAttribute("flipped", "false");
       target.classList.add("img-blank");
     } else {
-      target.setAttribute("check", "true");
+      target.setAttribute("flipped", "true");
       target.classList.remove("img-blank");
     }
   };
@@ -77,10 +77,9 @@ class Game extends React.Component {
           return(
             <div 
             className="img img-blank" 
-            name={card.name}
             key={card.id} 
             style={ { background: `url(${card.img_url})`} } 
-            check="false" 
+            flipped="false" 
             onClick={this.handleClick}> 
 
             </div>

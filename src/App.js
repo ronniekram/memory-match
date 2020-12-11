@@ -8,7 +8,6 @@ import Footer from "./components/nav/footer";
 class App extends React.Component {
   state = {
     showEndGame: false,
-    name: "",
     score: 0
   };
 
