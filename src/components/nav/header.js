@@ -2,7 +2,7 @@ import React from "react";
 
 class Header extends React.Component {
   render() {
-    const { name, score } = this.props;
+    const { score } = this.props;
     return ( 
       <div className="nav">
         <div className="nav-left">

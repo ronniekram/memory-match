@@ -3,63 +3,60 @@ import _ from 'lodash';
 import images from './images';
 
 class Game extends React.Component {
-  choices = []
-
-  handleClick = event => {
-    let pick = event.target;
-    if (pick.getAttribute("flipped") === "found") {
+  characters = [];
+  handleClick = (event) => {
+    let character = event.target;
+    if (character.getAttribute("check") === "found") {
       return;
-    };
-
-    if (pick !== this.choices[0]) {
-      this.switch(pick);
-      this.choices.push(pick);
-    } else {
-      this.switch(pick);
-      this.choices = [];
     }
 
-    if (this.choices.length > 2) {
-      if (!this.checkName(this.choices[0], this.choices[1])) {
-        this.switch(this.choices[0]);
-        this.switch(this.choices[1]);
-        this.choices.shift();
-        this.choices.shift();
+    if (character !== this.characters[0]) {
+      this.switch(character);
+      this.characters.push(character);
+    } else {
+      this.switch(character);
+      this.characters = [];
+    }
+
+    if (this.characters.length > 2) {
+      if (!this.checkName(this.characters[0], this.characters[1])) {
+        this.switch(this.characters[0]);
+        this.switch(this.characters[1]);
+        this.characters.shift();
+        this.characters.shift();
       } else {
-        this.choices.shift();
-        this.choices.shift();
+        this.characters.shift();
+        this.characters.shift();
       }
     }
-
-    let allImages = document.getElementsByClassName("img-blank");
-    if (allImages.length < 1) {
+    let allPictures = document.getElementsByClassName("image-blank");
+    if (allPictures.length < 1) {
       this.props.endGame(true);
-      let reset = document.getElementsByClassName("img");
+      let reset = document.getElementsByClassName("image");
       for (let i = 0; i < reset.length; i++) {
-        reset[i].classList.add("img-blank");
-        reset[i].setAttribute("flipped", "false");
-        this.choices = [];
+        reset[i].classList.add("image-blank");
+        reset[i].setAttribute("check", "false");
+        this.characters = [];
       }
-    }
-  }
-
-  checkName = (pick1, pick2) => {
-    if (pick1.getAttribute("name") === pick2.getAttribute("name")) {
-      pick1.setAttribute("flipped", "found");
-      pick2.setAttribute("flipped", "found");
-      return true;
-    } else {
-      return false;
     }
   };
 
-  switch = target => {
-    if (target.getAttribute("flipped") === "false") {
-      target.setAttribute("flipped", "true");
-      target.classList.add("img");
+  checkName = (character1, character2) => {
+    if (character1.getAttribute("name") === character2.getAttribute("name")) {
+      character1.setAttribute("check", "found");
+      character2.setAttribute("check", "found");
+      return true;
+    }
+    return false;
+  };
+
+  switch = (target) => {
+    if (target.getAttribute("check") === "true") {
+      target.setAttribute("check", "false");
+      target.classList.add("image-blank");
     } else {
-      target.setAttribute("flipped", "false");
-      target.classList.remove("img");
+      target.setAttribute("check", "true");
+      target.classList.remove("image-blank");
     }
   };
 
@@ -76,10 +73,10 @@ class Game extends React.Component {
         {cards.map(card => {
           return(
             <div 
-            className="img img-blank" 
+            className="image image-blank" 
             name={card.name}
             style={ { background: `url(${card.img_url})`} } 
-            flipped="false" 
+            check="false" 
             onClick={this.handleClick}> 
 
             </div>
