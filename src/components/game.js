@@ -54,11 +54,11 @@ class Game extends React.Component {
   };
 
   switch = target => {
-    if (target.getAttribute("flipped") === "true") {
-      target.setAttribute("flipped", "false");
+    if (target.getAttribute("flipped") === "false") {
+      target.setAttribute("flipped", "true");
       target.classList.add("img");
     } else {
-      target.setAttribute("flipped", "true");
+      target.setAttribute("flipped", "false");
       target.classList.remove("img");
     }
   };
@@ -76,7 +76,7 @@ class Game extends React.Component {
         {cards.map(card => {
           return(
             <div 
-            className="img-blank" 
+            className="img img-blank" 
             name={card.name}
             style={ { background: `url(${card.img_url})`} } 
             flipped="false" 

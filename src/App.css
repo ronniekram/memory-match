@@ -33,7 +33,7 @@ padding: 1rem;
 }
 
 .img {
-  background-size: 90% 90% !important;
+  background-size: 75% 75% !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
   border: 1px solid #39603D;
@@ -45,8 +45,10 @@ padding: 1rem;
 }
 
 .img-blank {
-  background: #A3BCB6;
-  /* background-size: contain; */
+  background: url('https://raw.githubusercontent.com/ronniekram/memory-match/main/src/images/card-back.png');
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
   border: 1px solid #39603D;
   border-radius: 15px;
   height: 8rem;
