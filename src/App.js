@@ -8,22 +8,18 @@ import Footer from "./components/nav/footer";
 class App extends React.Component {
   state = {
     showEndGame: false,
-    score: 0
+    score: 0,
   };
 
   handleEndGame = (boolean) => {
     if (boolean) {
-      this.setState({showEndGame: boolean, score: this.state.score + 1});
+      this.setState({ showEndGame: boolean, score: this.state.score + 1 });
     } else {
-      this.setState({showEndGame: boolean});
+      this.setState({ showEndGame: boolean });
     }
   };
-
-
-
   render() {
-    const {score, showEndGame} = this.state;
-
+    const { score, showEndGame } = this.state;
     return (
       <div>
         {showEndGame ? <GameOver newGame={this.handleEndGame} /> : null}
@@ -31,8 +27,9 @@ class App extends React.Component {
         <Game endGame={this.handleEndGame} />
         <Footer />
       </div>
-    )
+    );
   }
 }
+
 
 export default App;

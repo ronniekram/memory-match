@@ -71,16 +71,29 @@ class Game extends React.Component {
       <div className="game">
         <div className="inner-game">
         {cards.map(card => {
-          return(
-            <div 
-            className="image image-blank" 
-            name={card.name}
-            style={ { background: `url(${card.img_url})`} } 
-            check="false" 
-            onClick={this.handleClick}> 
-
-            </div>
-          )
+          if (card.check === "false"){
+            return(
+              <div 
+              className="image image-blank" 
+              name={card.name}
+              style={ { background: `url('https://raw.githubusercontent.com/ronniekram/memory-match/main/src/images/card-back.png')`} } 
+              check="false" 
+              onClick={this.handleClick}> 
+  
+              </div>
+            )
+          } else {
+            return(
+              <div 
+              className="image image-blank" 
+              name={card.name}
+              style={ { background: `url(${card.img_url})`} } 
+              check="false" 
+              onClick={this.handleClick}> 
+  
+              </div>
+            )
+          }
         })}
         </div>
       </div>
