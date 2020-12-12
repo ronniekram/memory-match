@@ -72,6 +72,9 @@ class Game extends React.Component {
       <div className="game">
         <div className="inner-game">
         {cards.map(card => {
+          if (card.check === "found") {
+            cards.splice(cards.indexOf(card), 1)
+          }
           return(
             <div 
             className="image image-blank" 
