@@ -5,6 +5,7 @@ import images from './images';
 class Game extends React.Component {
   characters = [];
   handleClick = (event) => {
+    console.log(event.target.getAttribute("name"))
     let character = event.target;
     if (character.getAttribute("check") === "found") {
       return;
