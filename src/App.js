@@ -22,8 +22,8 @@ class App extends React.Component {
     const { score, showEndGame } = this.state;
     return (
       <div>
-        {showEndGame ? <GameOver newGame={this.handleEndGame} /> : null}
         <Header score={score} />
+        {showEndGame ? <GameOver newGame={this.handleEndGame} /> : null}
         <Game endGame={this.handleEndGame} />
         <Footer />
       </div>
