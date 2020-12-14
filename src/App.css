@@ -90,7 +90,7 @@ color: #fff;
 font-family: 'Lora', serif;
 font-size: 2rem;
 font-weight: 700;
-margin: 1rem .5rem 0rem .5rem;
+margin: .5rem .5rem 0rem .5rem;
 padding: .1rem;
 }
 
@@ -107,7 +107,7 @@ background-color: #A3BCB6;
 color: #fff;
 font-size: .9rem;
 font-family: 'Roboto', sans-serif;
-margin: 0rem .5rem 1rem .5rem;
+margin: 0rem .5rem .5rem .5rem;
 padding: .25rem;
 text-align: center;
 }
