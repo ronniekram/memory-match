@@ -9,6 +9,21 @@ a {
   text-decoration: none;
 }
 
+.game-over {
+  background-color: #DADED4;
+  margin: 0rem .5rem;
+  display: flex;
+  justify-content: center;
+  padding-bottom: .5rem;
+}
+
+.message {
+  color: #3b3b3b;
+  font-family: 'Lora', serif;
+  margin: auto;
+  text-align: center;
+}
+
 .game {
 background-color: #DADED4;
 margin: 0rem .5rem;
