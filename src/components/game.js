@@ -44,7 +44,7 @@ class Game extends React.Component {
   };
 
   checkName = (character1, character2) => {
-    if (character1.getAttribute("name") === character2.getAttribute("name")) {
+    if (character1.getAttribute("name") === character2.getAttribute("name") && character1.id !== character2.id) {
       character1.setAttribute("check", "found");
       character2.setAttribute("check", "found");
       return true;
@@ -66,13 +66,16 @@ class Game extends React.Component {
 
 
   render() {
-    let cards = _.sampleSize(images, 8)
-    let cards2 = cards
-    cards = cards.concat(cards2).sort(() => Math.random() - 0.5)
+    let cards = _.sampleSize(images, 8);
+    let cards2 = cards;
+    cards = cards.concat(cards2).sort(() => Math.random() - 0.5);
+    let i = 0;
     return (
       <div className="game">
         <div className="inner-game">
         {cards.map(card => {
+          card.id = i + 1;
+          i ++;
           return(
             <div 
             className="image image-blank" 
