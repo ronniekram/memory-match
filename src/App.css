@@ -43,7 +43,7 @@ padding: 1rem;
 
 .inner-game {
   background-color: transparent;
-  width: 50%;
+  width: 50rem;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
