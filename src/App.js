@@ -2,6 +2,7 @@ import './App.css';
 import React from "react";
 import Game from "./components/game";
 import Medium from "./components/medium";
+import Hard from "./components/hard";
 import GameOver from "./components/gameover"
 import Header from "./components/nav/header";
 import Footer from "./components/nav/footer";
@@ -25,7 +26,8 @@ class App extends React.Component {
       <div>
         <Header score={score} />
         {showEndGame ? <GameOver newGame={this.handleEndGame} /> : null}
-        <Medium endGame={this.handleEndGame}/>
+        <Hard endGame={this.handleEndGame} />
+        {/* <Medium endGame={this.handleEndGame}/> */}
         {/* <Game endGame={this.handleEndGame} /> */}
         <Footer />
       </div>
