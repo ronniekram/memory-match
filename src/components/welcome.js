@@ -1,25 +1,35 @@
 import React from 'react';
 
 class Welcome extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      level: 'easy'
+    }
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSelect = this.handleSubmit.bind(this);
+  }
 
-  findDifficulty(event) {
-    if (event.target.className === "easy") {
-      console.log("easy level")
-    } else if (event.target.className === "medium") {
-      console.log("medium level")
-    } else if (event.target.className === "hard")
-      console.log("hard level")
+  handleChange(event) {
+    this.setState({level: event.target.value})
+  }
+
+  handleSubmit(event) {
+    console.log(this.state);
+    event.preventDefault();
   }
 
   render() {
     return <div className="dropdown">
-      <form>
+      <form onSubmit={this.handleSubmit}>
         <label> Choose a difficulty level: </label>
-        <select>
-          <option className="easy" onClick={() => this.findDifficulty}> Easy </option>
-          <option className="medium" onClick={() => this.findDifficulty}> Medium </option>
-          <option className="hard" onClick={() => this.findDifficulty}> Hard </option>
+        <select value={this.state.level} onChange={this.handleChange}>
+          <option value=""> </option>
+          <option value="easy"> Easy </option>
+          <option value="medium"> Medium </option>
+          <option value="hard"> Hard </option>
         </select>
+        <input type="submit" value="Play!" />
       </form>
     </div>
   }
