@@ -26,9 +26,9 @@ class App extends React.Component {
       <div>
         <Header score={score} />
         {showEndGame ? <GameOver newGame={this.handleEndGame} /> : null}
-        <Hard endGame={this.handleEndGame} />
+        {/* <Hard endGame={this.handleEndGame} /> */}
         {/* <Medium endGame={this.handleEndGame}/> */}
-        {/* <Game endGame={this.handleEndGame} /> */}
+        <Game endGame={this.handleEndGame} />
         <Footer />
       </div>
     );
