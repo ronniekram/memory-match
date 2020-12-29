@@ -7,7 +7,7 @@ class Welcome extends React.Component {
       level: 'easy'
     }
     this.handleChange = this.handleChange.bind(this);
-    this.handleSelect = this.handleSubmit.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleChange(event) {
@@ -15,8 +15,8 @@ class Welcome extends React.Component {
   }
 
   handleSubmit(event) {
-    console.log(this.state);
     event.preventDefault();
+    console.log(this.state);
   }
 
   render() {
@@ -29,7 +29,7 @@ class Welcome extends React.Component {
           <option value="medium"> Medium </option>
           <option value="hard"> Hard </option>
         </select>
-        <input type="submit" value="Play!" />
+        <input type="submit" value="Submit" />
       </form>
     </div>
   }
