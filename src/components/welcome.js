@@ -16,7 +16,13 @@ class Welcome extends React.Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    console.log(this.state);
+    if (this.state.level === "easy") {
+      console.log("selected easy level!")
+    } else if (this.state.level === "medium") {
+      console.log("selected medium level")
+    } else if (this.state.level === "hard") {
+      console.log("selected hard level!")
+    }
   }
 
   render() {
@@ -29,7 +35,7 @@ class Welcome extends React.Component {
           <option value="medium"> Medium </option>
           <option value="hard"> Hard </option>
         </select>
-        <input type="submit" value="Submit" />
+        <input type="submit" value="Play!" />
       </form>
     </div>
   }
