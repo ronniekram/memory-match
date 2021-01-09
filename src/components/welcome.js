@@ -1,5 +1,6 @@
 import React from 'react';
-
+import Game from './game'
+import Medium from './medium'
 class Welcome extends React.Component {
   constructor() {
     super();
