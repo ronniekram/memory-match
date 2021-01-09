@@ -1,5 +1,6 @@
-import './App.css';
 import React from "react";
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import './App.css';
 import Game from "./components/game";
 import Medium from "./components/medium";
 import Hard from "./components/hard";
