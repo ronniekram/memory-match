@@ -1,4 +1,5 @@
 import React from 'react';
+import {Route, Switch} from 'react-router-dom';
 import Game from './game'
 import Medium from './medium'
 class Welcome extends React.Component {
@@ -30,7 +31,8 @@ class Welcome extends React.Component {
     return <div className="dropdown">
       <form onSubmit={this.handleSubmit}>
         <label> Choose a difficulty level: </label>
-        <select value={this.state.level} onChange={this.handleChange}>
+        {/* <select value={this.state.level} onChange={this.handleChange}> */}
+        <select>
           <option value=""> </option>
           <option value="easy"> Easy </option>
           <option value="medium"> Medium </option>
