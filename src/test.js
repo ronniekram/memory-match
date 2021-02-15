@@ -8,10 +8,10 @@ const App = () => {
   const [showEndGame, selectShowEndGame] = useState(false);
   const [score, setScore] = useState(0);
 
-  const handleEndGame = (showEndGame) => {
-    if (showEndGame) {
-      
-    }
+  if (!showEndGame) {
+    setScore(score + 1);
+  } else {
+    <Game selectShowEndGame={selectShowEndGame} />
   }
 
 }
